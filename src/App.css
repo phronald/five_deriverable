@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+}
+.main_container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.container_input{
+text-align: center;
+max-width: 563px;
+margin: 0 auto;
+}
+.img {
+   width: 100%;
+   position: relative;
+   z-index: 1;
+}
+.section_input input{
+    height: 40px;
+max-height: 40px;
+border: none;
+background-color: rgba(0, 0, 0, .3);
+border-radius:10px 0 0 10px ;
+padding-left: 7px;
+box-sizing: border-box;
+cursor: pointer;
+}
+.section_input button{
+    height: 40px;
+max-height: 40px;
+border: none;
+}
+
+/* item*/
+
+.All{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.decoration{
+    width: 100%;
+    height: 100px;
+    background-color:#afafaf;
+}
+.header{
+    background-color: #e2e2e2;
+}
+.container_nav{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.container_nav ul  {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:.9px;
+}
+.menu{
+    display: none;
+}
+.container_nav ul li{
+    background-color: rgba(0, 0, 0, .1);
+    text-align: center;
+    height: 100px;
+    min-width: 110px;
+   
+}
+.title{
+width: 80%;
+height: 60px;
+margin: 0 auto;
+text-align: center;
+letter-spacing: 4px;
+text-transform: capitalize;
+color: #3f474e;
+
+    
+}
+.title h1{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.welcome{
+    width: 80%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    color: #afafaf;
+}
+.welcome span{
+    color:#3f474e ;
+}
+.section_search{
+
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+text-align: center;
+padding-top: 20px;
+}
+.section_search input{
+  width: 70%;
+height: 40px;
+  border: none;
+  border-radius: 15px;
+  border-top:1px solid #87b3b6 ;
+  box-shadow: 5px 5px  2px rgba(0,0,0,0.3);
+max-width: 500px;
+}
+.select{
+border: none;
+width: 100%;
+height: 100%;
+
+}
+.nextAndPrevius{
+    width: 80%;
+    background-color: bisque;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    width: 100px;
+}
+.container_pokemons{
+    width: 80%;
+    margin: 0 auto;
+ 
+}
+.container_cards{
+    width: 100%;
+display:grid ;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+margin-top: 10px;
+}
+.item{
+    background-color: rgba(0, 0, 0, .3);
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.data_pokemon{
+    width: 100%;
+    height: 70%;
+    background-color: #87b3b6;
+}
+.fond{
+    width: 100%;
+    height: 30%;
+}
+@media ( max-width: 1200px) {
+    .main_container{
+        width: 80%;
+    }
+    .container_input{
+        max-width: 563px;
+      
+        }
+ .img {
+     width: 80%;
+         }
+}
+/*medium*/
+@media ( max-width: 770px) {
+    .main_container{
+        width: 90%;
+    }
+    .img {
+        width: 60%;
+ }
+.section_input input{
+ height: 30px;
+ }
+.section_input button{
+height: 30px;
+ }    
+                
+.container_nav{
+display: none;
+}    
+.decoration{
+height: 60px;
+ }
+.header{
+ height: 60px;
+ }
+ .menu{
+  display: block;
+height: 100%;
+ width: 50px;
+border: none;
+ }
+}
+.container_data{
+    width: 100%;
+    display: flex;
+}
+
+
+
+/* small*/
+@media ( max-width: 576px) {
+    .main_container{
+        width: 100%;
+    }
+    .title{
+        width: 90%;
+    }
+    .title h1{
+        font-size: 1.5rem;
+    }
+    .section_search input{
+        width: 300px;
+    }
+}
+/*extrasmall*/
+@media ( max-width: 400px) {
+    .section_input input{
+    height: 30px;
+    }
+    .section_input button{
+   height: 30px;
+    }
+ 
+}

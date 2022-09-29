@@ -11,21 +11,6 @@ function App() {
   return (
     <HashRouter>
       <div className="App">
-       
-       {
-
-        /*
-        
-        <Link to="/pokemonall">pokemon all</Link>
-        <br />
-        <Link to="/pokemonid/:id">pokemon id</Link>
-        <br />
-        <Link to="/">home</Link>
-        <br />
-    
-        */
-       }
-          
         <Routes>
           <Route path="/" element={<InputUser />} />
           <Route element={<ProtectedRoutes/>}>

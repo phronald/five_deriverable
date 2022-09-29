@@ -10,7 +10,7 @@ const InputUser = () => {
   const navigate = useNavigate();
 
   const distpatch = useDispatch();
-  const [userName, setUserName] = useState();
+  const [userName, setUserName] = useState("");
 
   const distpatchUserName = () => {
     distpatch(changeName(userName));
